@@ -12,16 +12,21 @@ This program follows multi-threading approach, creates a new thread for each cli
 on the socket)
 7.	Close the connection
 
+### Overall Flow
+
+- The main server accepts incoming connections and creates a new ClientHandler thread for each connection.
+- The ClientHandler thread handles the client's request, serving files or responding with appropriate error messages.
+- The server uses a simple timeout strategy based on the number of active connections to manage the connection timeout duration.
 
 ### To Run the Program
 
 *Go to the directory of the file
 
 *Enter the following command:
-	`cd src/main/java/com/webserver``
+	`cd src/main/java/com/webserver`
 
 *Compile the java class
-	`javac MainWebServer.java``
+	`javac MainWebServer.java`
 
 *Run the class, specifying the arguments:
 	`java MainWebServer.java -document_root ../../../../../root -port 9000` 
