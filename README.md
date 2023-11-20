@@ -2,7 +2,9 @@
 
 A Java program that implements a basic web server can serve static web content. It listens for incoming HTTP requests, processes them, and responds with the appropriate web page or an error page if necessary. 
 This server supports HTTP 1.10 and HTTP 1.1 and handles common status codes like 200 (OK), 400 (Bad Request), 403 (Forbidden), 404 (Not Found) and 501 (Method Not Supported). 
-This program follows multi-threading approach, creates a new thread for each client connection. It supports:
+This program follows multi-threading approach, creates a new thread for each client connection. 
+
+It supports:
 1.	Forever loop for listening for connections, accept new connection from incoming client.
 2.	Parse HTTP request
 3.	Ensure well-formed request (return error otherwise)
