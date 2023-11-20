@@ -20,13 +20,13 @@ on the socket)
 
 ### To Run the Program
 
-*Go to the directory of the file
+- Go to the directory of the file
 
-*Enter the following command:
+- Enter the following command:
 	`cd src/main/java/com/webserver`
 
-*Compile the java class
+- Compile the java class
 	`javac MainWebServer.java`
 
-*Run the class, specifying the arguments:
+- Run the class, specifying the arguments:
 	`java MainWebServer.java -document_root ../../../../../root -port 9000` 
